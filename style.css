@@ -11,7 +11,7 @@ h2::after{
     position: absolute;
     width: 20%;
     height: 3px;
-    background: blue;
+    background: #3763EB;
     bottom: 0;
     left: 40%;
     margin: auto;
@@ -25,38 +25,48 @@ h2::after{
     padding: 50px;
     border: none;
     transition: 0.4s;
-    
 }
 .card:hover{
-    background: blue;
+    background: #3763EB;
     border-radius: 4px;
     color: #fff;
 }
-.card:hover li{
+.c-header{
+    margin: 0 50px;
+}
+.c-header p{
     color: #fff;
 }
-.card:hover strong, h1 {
-    animation: identifier all 3s ease-in-out;
+.card:hover strong{
+    animation: effect .8s ease-in 1;
 }
-@keyframes identifier {
+.card:hover h1{
+    animation: effect .8s ease-in 1;
+}
+.c-header hr{
+    padding-top: 15px;
+}
+.card:hover .c-header hr{
+    animation: effect .8s ease-in 1;
+}
+@keyframes effect{
     0%{
-        color: #ddd;
-    }
-    50%{
-        color: rgb(39, 38, 38);
+        color: #000;
     }
     100%{
         color: #fff;
     }
-    
+}
+.card:hover li{
+    color: #fff;
 }
 .card:hover .start-btn a{
     background: #fff;
-    color: blue;
+    color: #3763EB;
 }
 .card h1{
-    padding-bottom: 40px;
-    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    
 }
 .card ul{
     list-style: none;
@@ -69,7 +79,7 @@ h2::after{
 }
 .card .start-btn a{
     text-decoration: none;
-    background: blue;
+    background: #3763EB;
     color: #fff;
     padding: 8px 20px;
     border-radius: 20px;
@@ -94,7 +104,7 @@ h2::after{
     height: 100%;
     top: 0;
     left: 0;
-    background: blue;
+    background: #3763EB;
     border-radius: 20px;
     z-index: -1;
     transition: 0.4s;
@@ -138,7 +148,7 @@ h2::after{
 .purchase-now a{
     text-decoration: none;
     background: white;
-    color: blue;
+    color: #3763EB;
     padding: 8px 20px;
     border-radius: 20px;
     border: 2px solid #fff;
@@ -156,7 +166,7 @@ h2::after{
     position: absolute;
     width: 0%;
     height: 100%;
-    background: blue;
+    background: #3763EB;
     left: 0;
     top: 0;
     border-radius: 20px;
@@ -189,5 +199,3 @@ h2::after{
 .signup-right{
     box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.06);
 }
-
-
